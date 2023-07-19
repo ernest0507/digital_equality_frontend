@@ -20,7 +20,7 @@ const SignIn = () => {
   });
 
   const onSubmit = (data) => {
-    axios.post('/auth/login', data).then(() => {
+    axios.post('http://31.129.99.133/auth/login', data).then(() => {
       navigate('/')
     })
   };
