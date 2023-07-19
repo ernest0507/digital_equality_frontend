@@ -24,7 +24,7 @@ export default function Registr() {
   });
 
   const onSubmit = (data) => {
-    axios.post('http://31.129.99.133/auth/', data).then((response) => {
+    axios.post('http://31.129.99.133:8800/auth/', data).then((response) => {
       if (!response.data.Error === 401) {
         navigate('/')
       }
